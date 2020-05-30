@@ -5,5 +5,78 @@ body
     font-family: "Open Sans";
     background-image: url("../media/death-standing-background.jpg");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
+    background-size: 100%;
+}
+/*-------------header-----------*/
+header
+{
+    background-image: url("../media/death-stranding-cover1.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+header nav
+{
+    background-color: white;
+    margin-left: -20px;
+    margin-right: -20px;
+
+}
+header nav ul li
+{
+    display: inline;
+    white-space: nowrap;
+
+}
+header nav ul li a
+{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+/*------------main------------*/
+main nav
+{
+    text-align: right;
+    margin-bottom: 20px;
+}
+a[href="#fomenu"]
+{
+    text-decoration: none;
+}
+
+.rejtett {position:absolute; left:-9999px;}
+
+h1,h2,h3
+{
+    text-shadow: 3px 3px 3px #ccc;
+}
+p
+{
+    text-align: justify;
+}
+article
+{
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    column-width: 400px;
+    -webkit-column-width: 400px;
+    -moz-column-width: 400px;
+}
+
+main,footer
+{
+    width: 70%;
+    min-width: 400px;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+/*------------footer------------*/
+footer
+{
+    text-align: center;
 }
