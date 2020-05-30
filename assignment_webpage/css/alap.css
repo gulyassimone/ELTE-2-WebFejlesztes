@@ -2,7 +2,7 @@
 
 body
 {
-    font-family: "Open Sans";
+    font-family: "Open Sans",serif;
     background-image: url("../media/death-standing-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -71,12 +71,12 @@ section
     border-top: 1px solid #ccc;
     padding: 20px;
 }
-main article
+main article:not(#forras)
 {
 
-    column-width: 800px;
-    -webkit-column-width: 800px;
-    -moz-column-width: 800px;
+    column-width: 150px;
+    -webkit-column-width: 400px;
+    -moz-column-width: 400px;
 }
 main,footer
 {
@@ -96,7 +96,7 @@ article#forras
     padding: 20px;
 }
 /*------------footer------------*/
-footer
+footer address
 {
     text-align: center;
 }
