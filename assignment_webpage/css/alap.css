@@ -2,7 +2,7 @@
 
 body
 {
-    font-family: "Open Sans",serif;
+    font-family: "Open Sans",sans-serif;
     background-image: url("../media/death-standing-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -15,21 +15,22 @@ header
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    position: relative;
 }
 header nav
 {
     background-color: white;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 10px 10px 10px;
 
 }
 header nav ul li
 {
     display: inline;
     white-space: nowrap;
-
 }
-header nav ul li a
+header nav a
 {
     color: black;
     text-decoration: none;
@@ -38,18 +39,33 @@ header nav ul li a
     font-size: 1.5em;
     margin-right: 1em;
 }
-nav#gyengenlato span{
+nav#gyengenlato {
     position:absolute;
-    width:210px;
+    width:20%;
     top: 10px;
     right: 28px;
-    border: 1px solid black;
+    color: red;
 }
+a#normalbetu {display: none}
 /*------------main------------*/
 main nav
 {
-    text-align: right;
+    font-variant: small-caps;
+    text-align: left;
     margin-bottom: 20px;
+}
+main aside nav
+{
+    background-color: white;
+    padding: 10px;
+    margin: 0 10px 10px 20px;
+    font-size: 24px;
+}
+main aside nav a
+{
+    color: black;
+    text-decoration: none;
+
 }
 a[href="#fomenu"]
 {
