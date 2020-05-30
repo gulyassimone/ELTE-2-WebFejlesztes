@@ -4,104 +4,91 @@
     <meta charset="utf-8">
     <title>Vélemény</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-          crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/alap.css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
 </head>
 
 <body>
-<img src="media/death-stranding-cover1.jpg" alt="Death Stranding borító"/>
-<img src="media/death-stranding-cover-2.jpg" alt="Death Stranding felírat"/>
-
-<div id="tartalomraugras">
+<nav id="tartalomraugras">
     <h2 class="rejtett">Ugrás az oldalon belül</h2>
-    <a href="#tartalom">Ugrás a tartalomra</a>
-</div>
-
-<nav id="fomenu">
-    <h2 class="rejtett">Főmenü</h2>
-    <div class="row">
-        <div class="col-md-1"><a href="index.html" title="Összefoglaló">Főoldal</a></div>
-        <div class="col-md-1"><a href="szereplok.html" title="A játék szereplői">Szereplők</a></div>
-        <div class="col-md-1"><a href="kritika.html" title="A játék kritikája és dijainak összefoglalója">Kritika</a>
-        </div>
-        <div class="col-md-1"><a href="velemenyed.html" title="Itt megírhatod a véleményed">Véleményed</a></div>
-    </div>
+    <a class="rejtett" href="#tartalom">Ugrás a tartalomra</a>
 </nav>
-
-<div class="container">
-    <main id="tartalom">
-        <div id="velemeny">
-            <h1>Véleményed</h1>
-            <p>Neked is van véleményed a <cite lang="en">Death Stranding</cite> játékról? Töltsd ki az alábbi űrlapot,
-                és
-                mondd el nekünk!</p>
-            <form action="mailto:h2e9aq@inf.elte.hu" method="post" enctype="text/plain">
-                <fieldset>
-                    <legend>Adataid</legend>
-                    <p><label>Név: <input type="text" name="nev" id="nev" required> </label></p>
-                    <p>Nem:
-                        <input type="radio" name="nem" id="nem1" value="Férfi"><label for="nem1">Férfi</label>
-                        <input type="radio" name="nem" id="nem2" value="Nő"><label for="nem2">Nő</label>
-                    </p>
-                    <p><label><strong>Email cím:</strong> <input type="email" name="email" id="email" required></label>
-                    </p>
-                    <p><input type="checkbox" name="nyilvanos" id="nyilvanos" value="igen" checked> <label
-                            for="nyilvanos">Hozzájárulok
-                        véleményem nyilvánossá tételéhez.</label></p>
-                </fieldset>
-                <fieldset>
-                    <legend>Véleményed</legend>
-                    <p>
-                        <label>Véleményed:<br>
-                            <textarea cols="60" rows="10" name="velemenyed" id="velemenyed"></textarea><br>
-                        </label>
-                    </p>
-                    <p>Értékelés 1-től 5-ös skálán:<br>
-                        <input type="radio" name="ertekeles" id="v1" value="1"><label for="v1">1</label>
-                        <input type="radio" name="ertekeles" id="v2" value="2"><label for="v2">2</label>
-                        <input type="radio" name="ertekeles" id="v3" value="3"><label for="v3">3</label>
-                        <input type="radio" name="ertekeles" id="v4" value="4"><label for="v4">4</label>
-                        <input type="radio" name="ertekeles" id="v5" value="5" checked><label for="v5">5</label></p>
-                    <p>
-                        <label>Melyik volt a kedvenc szereplőd, és miért?:<br>
-                            <textarea cols="60" rows="10" name="kedvencszereplo"
-                                      id="kedvencszereplo"></textarea></label>
-                    </p>
-                    <p>
-                        Ajánlanád-e másoknak?:
-                        <input type="radio" name="ajanlas" id="a1" value="Igen"><label for="a1">Igen</label>
-                        <input type="radio" name="ajanlas" id="a2" value="Nem"><label for="a2">Nem</label>
-                    </p>
-                </fieldset>
-                <fieldset>
-                    <legend>Adatok elküldése</legend>
-                    <div class="row">
-                    <div class="btn-group">
-                        <div class="col"><input type="submit" value="Elküld" class="btn btn-primary"></div>
-                        <div class="col"><input type="reset" value="Töröl" class="btn btn-danger"></div>
-                    </div>
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-    </main>
-    <footer id="keszito">
-        <address>
-            Készítette: Gulyás Simone <br/>
-            <!-- link az email címre mailto: protokollal --> (<a href="mailto:h2e9aq@inf.elte.hu">h2e9aq@inf.elte.hu</a>)<br/>
-            1205 Budapest, Nevenincs u. 17
-        </address>
-    </footer>
-</div>
+<header>
+    <nav id="gyengenlato"><a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;">Nagybetűs
+        változat</a>
+        <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;">Normál változat</a>
+    </nav>
+    <nav id="fomenu">
+        <h2 class="rejtett">Főmenü</h2>
+        <ul>
+            <li><a href="index.html" title="Összefoglaló">Főoldal</a></li>
+            <li><a href="szereplok.html" title="A játék szereplői">Szereplők</a></li>
+            <li><a href="kritika.html"
+                   title="A játék kritikája és dijainak összefoglalója">Kritika</a>
+            </li>
+            <li><a href="velemenyed.html" title="Itt megírhatod a véleményed">Véleményed</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="tartalom">
+    <div id="velemeny">
+        <h1>Véleményed</h1>
+        <p>Neked is van véleményed a <cite lang="en">Death Stranding</cite> játékról? Töltsd ki az alábbi űrlapot,
+            és
+            mondd el nekünk!</p>
+        <form action="mailto:h2e9aq@inf.elte.hu" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Adataid</legend>
+                <p><label>Név: <input type="text" name="nev" id="nev" required> </label></p>
+                <p>Nem:
+                    <input type="radio" name="nem" id="nem1" value="Férfi"><label for="nem1">Férfi</label>
+                    <input type="radio" name="nem" id="nem2" value="Nő"><label for="nem2">Nő</label>
+                </p>
+                <p><label><strong>Email cím:</strong> <input type="email" name="email" id="email" required></label>
+                </p>
+                <p><input type="checkbox" name="nyilvanos" id="nyilvanos" value="igen" checked> <label
+                        for="nyilvanos">Hozzájárulok
+                    véleményem nyilvánossá tételéhez.</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Véleményed</legend>
+                <p>
+                    <label>Véleményed:<br>
+                        <textarea cols="60" rows="10" name="velemenyed" id="velemenyed"></textarea><br>
+                    </label>
+                </p>
+                <p>Értékelés 1-től 5-ös skálán:<br>
+                    <input type="radio" name="ertekeles" id="v1" value="1"><label for="v1">1</label>
+                    <input type="radio" name="ertekeles" id="v2" value="2"><label for="v2">2</label>
+                    <input type="radio" name="ertekeles" id="v3" value="3"><label for="v3">3</label>
+                    <input type="radio" name="ertekeles" id="v4" value="4"><label for="v4">4</label>
+                    <input type="radio" name="ertekeles" id="v5" value="5" checked><label for="v5">5</label></p>
+                <p>
+                    <label>Melyik volt a kedvenc szereplőd, és miért?:<br>
+                        <textarea cols="60" rows="10" name="kedvencszereplo"
+                                  id="kedvencszereplo"></textarea></label>
+                </p>
+                <p>
+                    Ajánlanád-e másoknak?:
+                    <input type="radio" name="ajanlas" id="a1" value="Igen"><label for="a1">Igen</label>
+                    <input type="radio" name="ajanlas" id="a2" value="Nem"><label for="a2">Nem</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Adatok elküldése</legend>
+                        <input type="submit" value="Elküld" >
+                        <input type="reset" value="Töröl" >
+            </fieldset>
+        </form>
+    </div>
+</main>
+<footer id="keszito">
+    <address>
+        Készítette: Gulyás Simone
+        <!-- link az email címre mailto: protokollal --> (<a
+            href="mailto:h2e9aq@inf.elte.hu">h2e9aq@inf.elte.hu</a>)
+        1205 Budapest, Nevenincs u. 17
+    </address>
+</footer>
 </body>
 </html>
