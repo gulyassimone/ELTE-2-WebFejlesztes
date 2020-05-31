@@ -14,21 +14,23 @@
     <a class="rejtett" href="#tartalom">Ugrás a tartalomra</a>
 </nav>
 <header>
-    <nav id="gyengenlato"><a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;">Nagybetűs
-        változat</a>
-        <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;">Normál változat</a>
-    </nav>
-    <nav id="fomenu">
-        <h2  class="rejtett">Főmenü</h2 >
-        <ul>
-            <li><a href="index.html" title="Összefoglaló">Főoldal</a></li>
-            <li><a href="szereplok.html" title="A játék szereplői">Szereplők</a></li>
-            <li><a href="kritika.html"
-                   title="A játék kritikája és dijainak összefoglalója">Kritika</a>
-            </li>
-            <li><a href="velemenyed.html" title="Itt megírhatod a véleményed">Véleményed</a></li>
-        </ul>
-    </nav>
+    <div class="fejlec">
+        <nav id="gyengenlato"><a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;"><strong>A+</strong> Nagybetűs
+            változat</a>
+            <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><strong>A-</strong> Normál változat</a>
+        </nav>
+        <nav id="fomenu">
+            <h2 class="rejtett">Főmenü</h2>
+            <ul>
+                <li><a href="index.html" title="Összefoglaló">Főoldal</a></li>
+                <li><a href="szereplok.html" title="A játék szereplői">Szereplők</a></li>
+                <li><a href="kritika.html"
+                       title="A játék kritikája és dijainak összefoglalója">Kritika</a>
+                </li>
+                <li><a href="velemenyed.html" title="Itt megírhatod a véleményed">Véleményed</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main id="tartalom">
     <article id="kritika">
@@ -49,7 +51,7 @@
                 <li><p>A világ meglehetősen üres</p></li>
             </ul>
         </section>
-        <section id="osszegzes">
+        <section id="osszegzes" class="oszlopos">
             <h2>Összességében:</h2>
             <p>
                 A <cite lang="en">Death Standing</cite> vélhetően a generáció legmegosztóbb játéka lesz. A
@@ -71,11 +73,16 @@
                 élvezhetünk.
             </p>
         </section>
+        <nav id="fomenureugras1">
+            <h2 class="rejtett">Ugrás a főmenüre</h2>
+            <a href="#fomenu">Ugrás a főmenüre</a>
+        </nav>
     </article>
-    <div id="dijak">
+    <article id="dijak">
+        <h1>Díjak</h1>
         <table>
             <caption>
-                <h1 >Díjak</h1 >
+                <h2><cite lang="en">Death Stranding</cite> díjai</h2 >
                 <details>
                     <summary>Súgó</summary>
                     <p>(Az alábbi táblázat a játék díjait és jelöléseit tartalmazza.)</p>
@@ -181,7 +188,11 @@
                 <td><span lang="en">Sound Editing in a Game Cinema</span></td>
             </tr>
         </table>
-    </div>
+    </article>
+    <nav id="fomenureugras1">
+        <h2 class="rejtett">Ugrás a főmenüre</h2>
+        <a href="#fomenu">Ugrás a főmenüre</a>
+    </nav>
     <article id="forras">
         <h1 >Források</h1 >
         <p><a target="_blank" href="https://hu.ign.com/death-stranding/53406/review/teszt-death-stranding">hu.ign.com:
@@ -193,7 +204,7 @@
     <address>
         Készítette: Gulyás Simone
         <!-- link az email címre mailto: protokollal --> (<a
-            href="mailto:h1 e9aq@inf.elte.hu">h1 e9aq@inf.elte.hu</a>)
+            href="mailto:h1 e9aq@inf.elte.hu">h2e9aq@inf.elte.hu</a>)
         1205 Budapest, Nevenincs u. 17
     </address>
 </footer>

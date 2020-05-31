@@ -14,21 +14,25 @@
     <a class="rejtett" href="#tartalom">Ugrás a tartalomra</a>
 </nav>
 <header>
-    <nav id="gyengenlato"><a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;">Nagybetűs
-        változat</a>
-        <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;">Normál változat</a>
-    </nav>
-    <nav id="fomenu">
-        <h2 class="rejtett">Főmenü</h2>
-        <ul>
-            <li><a href="index.html" title="Összefoglaló">Főoldal</a></li>
-            <li><a href="szereplok.html" title="A játék szereplői">Szereplők</a></li>
-            <li><a href="kritika.html"
-                   title="A játék kritikája és dijainak összefoglalója">Kritika</a>
-            </li>
-            <li><a href="velemenyed.html" title="Itt megírhatod a véleményed">Véleményed</a></li>
-        </ul>
-    </nav>
+    <div class="fejlec">
+        <nav id="gyengenlato"><a id="nagybetu" href="#"
+                                 onclick="setActiveStyleSheet('nagybetus'); return false;"><strong>A+</strong> Nagybetűs
+            változat</a>
+            <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><strong>A-</strong>
+                Normál változat</a>
+        </nav>
+        <nav id="fomenu">
+            <h2 class="rejtett">Főmenü</h2>
+            <ul>
+                <li><a href="index.html" title="Összefoglaló">Főoldal</a></li>
+                <li><a href="szereplok.html" title="A játék szereplői">Szereplők</a></li>
+                <li><a href="kritika.html"
+                       title="A játék kritikája és dijainak összefoglalója">Kritika</a>
+                </li>
+                <li><a href="velemenyed.html" title="Itt megírhatod a véleményed">Véleményed</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main id="tartalom">
@@ -37,17 +41,27 @@
         <nav id="oldalmenu">
             <h2 class="rejtett">Oldalmenü</h2>
             <ul>
-                <li><a href="#sam" accesskey="s"><span style="text-decoration: underline">S</span>am Porter Bridges</a></li>
-                <li><a href="#amelie" accesskey="b">Ridget Strand/<span style="text-decoration: underline">B</span>melie</a></li>
+                <li><a href="#sam" accesskey="s"><span style="text-decoration: underline">S</span>am Porter Bridges</a>
+                </li>
+                <li><a href="#amelie" accesskey="b">Ridget Strand/<span style="text-decoration: underline">B</span>melie</a>
+                </li>
                 <li><a href="#veteran" accesskey="v">A <span style="text-decoration: underline">V</span>eterán</a></li>
-                <li><a href="#higgs" accesskey="h"><span style="text-decoration: underline">H</span>iggs Monaghan</a></li>
+                <li><a href="#higgs" accesskey="h"><span style="text-decoration: underline">H</span>iggs Monaghan</a>
+                </li>
                 <li><a href="#deadman" accesskey="m">Dead<span style="text-decoration: underline">M</span>an</a></li>
             </ul>
         </nav>
     </aside>
-    <article>
-        <section id="sam">
+    <article id="szereplok">
+        <section id="sam" class="oszlopos">
             <h2><span style="text-decoration: underline">S</span>AM PORTER BRIDGES</h2>
+            <figure>
+                <img src="media/death-stranding-death-stranding-karakterek-es-szineszek-Sam.png"
+                     alt="SAM PORTER BRIDGES szereplő"
+                     width="1000"
+                     class="responsive">
+                <figcaption>SAM PORTER BRIDGES szereplő</figcaption>
+            </figure>
             <p>
                 Sam Porter Bridges , <q>A Legenda</q>, <q>A nagy szállító</q> – a <cite lang="en">Death
                 Stranding</cite> általad irányított főszereplőjét számos néven ismerik Amerikában, hiszen
@@ -68,11 +82,6 @@
                 nyugati
                 part csücskéig.
             </p>
-            <figure>
-                <img src="media/death-stranding-death-stranding-karakterek-es-szineszek-Sam.png"
-                     alt="SAM PORTER BRIDGES szereplő">
-                <figcaption>SAM PORTER BRIDGES szereplő</figcaption>
-            </figure>
             <p>Ha Sam arca és hangja ismerős számodra, az semmiképp sem a véletlen
                 műve, őt ugyanis az a
                 Norman
@@ -96,8 +105,19 @@
                 történelem!
             </p>
         </section>
-        <section id="amelie">
+        <nav id="fomenureugras1">
+            <h2 class="rejtett">Ugrás a főmenüre</h2>
+            <a href="#fomenu">Ugrás a főmenüre</a>
+        </nav>
+        <section id="amelie" class="oszlopos">
             <h2><span style="text-decoration: underline">B</span>RIDGET STRAND/AMELIE</h2>
+            <figure>
+                <img src="media/death-stranding-death-stranding-karakterek-es-szineszek-Amilie.png"
+                     alt="BRIDGET STRAND/AMELIE szereplő"
+                     width="1000"
+                     class="responsive">
+                <figcaption>BRIDGET STRAND/AMELIE szereplő</figcaption>
+            </figure>
             <p>
                 Amerika haldokló elnöke és fogságban tartott lánya, Amelie , a <cite lang="en">Death
                 Stranding</cite>
@@ -109,11 +129,6 @@
                 épen
                 maradt részeit.
             </p>
-            <figure>
-                <img src="media/death-stranding-death-stranding-karakterek-es-szineszek-Amilie.png"
-                     alt="BRIDGET STRAND/AMELIE szereplő">
-                <figcaption>BRIDGET STRAND/AMELIE szereplő</figcaption>
-            </figure>
             <p>
                 Bridget és Amelie szerepét egyetlen színész öltötte magára: az
                 <time datetime="1949">1949</time>
@@ -130,8 +145,19 @@
                 nevű szereplő (a főszereplő felesége), akit Wagnerről mintázott.
             </p>
         </section>
-        <section id="veteran">
+        <nav id="fomenureugras2">
+            <h2 class="rejtett">Ugrás a főmenüre</h2>
+            <a href="#fomenu">Ugrás a főmenüre</a>
+        </nav>
+        <section id="veteran" class="oszlopos">
             <h2><span style="text-decoration: underline">V</span>ETERÁN</h2>
+
+            <figure>
+                <img src="media/death-stranding-death-stranding-karakterek-Veteran.png" alt="A Veteran szereplő"
+                     width="1000"
+                     class="responsive">
+                <figcaption>A Veteran szereplő</figcaption>
+            </figure>
             <p>A <q>veterán</q>, a <q>titokzatos ember</q>, a <q>titokzatos katona</q>: több
                 néven is lehet illetni
                 azt
@@ -144,10 +170,6 @@
                     Stranding</cite>-univerzum
                 egyik meghatározó alakja, az őt alakító Mads Mikkelsen pedig a valóságban mondhatja el ugyanezt
                 magáról, ha a film- és sorozatiparról van szó. </p>
-            <figure>
-                <img src="media/death-stranding-death-stranding-karakterek-Veteran.png" alt="A Veteran szereplő">
-                <figcaption>A Veteran szereplő</figcaption>
-            </figure>
             <p>
                 A dán színészlegenda a Heartmant alakító rendező/forgatókönyvíró/producer, Nicolas Winding
                 Refn révén került kapcsolatba Kodzsimával . Ő rendezte ugyanis a
@@ -167,8 +189,20 @@
                 semmiképp sem hagyhatja ki ezt a szerepet, Mikkelsen pedig el is vállalta.
             </p>
         </section>
-        <section id="higgs">
+        <nav id="fomenureugras3">
+            <h2 class="rejtett">Ugrás a főmenüre</h2>
+            <a href="#fomenu">Ugrás a főmenüre</a>
+        </nav>
+        <section id="higgs" class="oszlopos">
             <h2><span style="text-decoration: underline">H</span>IGGS MONAGHAN</h2>
+
+            <figure>
+                <img src="media/death-stranding-death-stranding-karakterek-es-szineszek-Higgs.png"
+                     alt="HIGGS MONAGHAN szereplő"
+                     width="1000"
+                     class="responsive">
+                <figcaption>HIGGS MONAGHAN szereplő</figcaption>
+            </figure>
             <p>
                 A <cite lang="en">Death Stranding</cite> „főgonosza” és antagonistája, az aranymaszkot viselő Higgs
                 már az első percekben komoly bajt zúdít Sam nyakába, de ez később csak fokozódik, sőt: igazából
@@ -177,11 +211,6 @@
                 több
                 alkalommal is borsot törve mindenki orra alá.
             </p>
-            <figure>
-                <img src="media/death-stranding-death-stranding-karakterek-es-szineszek-Higgs.png"
-                     alt="HIGGS MONAGHAN szereplő">
-                <figcaption>HIGGS MONAGHAN szereplő</figcaption>
-            </figure>
             <p>
                 Higgset nem egy a színészkedéséről, sokkal inkább a szinkronmunkáiról ismert alak, Troy
                 Baker alakítja, aki egy időben látszólag az összes létező, nagyszabású videojátékban feltűnt. Ő
@@ -196,8 +225,21 @@
                 Ocelotot a <abbr lang="en" title="Metal Gear Solid 5">MGS5</abbr> japán változatában!
             </p>
         </section>
-        <section id="deadman">
+        <nav id="fomenureugras4">
+            <h2 class="rejtett">Ugrás a főmenüre</h2>
+            <a href="#fomenu">Ugrás a főmenüre</a>
+        </nav>
+        <section id="deadman" class="oszlopos">
+
             <h2>DEAD<span style="text-decoration: underline">M</span>AN</h2>
+
+            <figure>
+                <img src="media/death-stranding-death-stranding-karakterek-es-szineszek-Deadman.png"
+                     alt="DEADMAN szereplő"
+                     width="1000"
+                     class="responsive">
+                <figcaption>DEADMAN szereplő</figcaption>
+            </figure>
             <p>
                 A Sam feladatának kivitelezésében asszisztáló számtalan figura közül egyre sem lehetne azt mondani,
                 hogy felejthető vagy egyszerű lenne, hiszen mindnyájuknak megvan a maguk részletesen kidolgozott,
@@ -207,11 +249,6 @@
                 fejezetben nemcsak, hogy szerepet kap, de rendkívül komolyan hozzá is járul ahhoz, hogy Sam össze
                 tudja kötni a gócvárosokat, és ki tudja aknázni a teljes potenciálját.
             </p>
-            <figure>
-                <img src="media/death-stranding-death-stranding-karakterek-es-szineszek-Deadman.png"
-                     alt="DEADMAN szereplő">
-                <figcaption>DEADMAN szereplő</figcaption>
-            </figure>
             <p>
                 Ugyanezen leírás viszont nem csak a karakterre, de az őt életre keltő Guillermo del Toróra is
                 igaz, aki ugyan a <cite lang="en">Death Stranding</cite> készítésének kreatív részében nem vett
@@ -227,6 +264,10 @@
                 <cite lang="en">Death Stranding</cite> ből.
             </p>
         </section>
+        <nav id="fomenureugras5">
+            <h2 class="rejtett">Ugrás a főmenüre</h2>
+            <a href="#fomenu">Ugrás a főmenüre</a>
+        </nav>
     </article>
     <article id="forras">
         <h2>Források</h2>

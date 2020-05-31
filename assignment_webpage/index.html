@@ -14,9 +14,11 @@
 </nav>
 <header>
     <div class="fejlec">
-        <nav id="gyengenlato"><a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;">Nagybetűs
+        <nav id="gyengenlato"><a id="nagybetu" href="#"
+                                 onclick="setActiveStyleSheet('nagybetus'); return false;"><strong>A+</strong> Nagybetűs
             változat</a>
-            <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;">Normál változat</a>
+            <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><strong>A-</strong>
+                Normál változat</a>
         </nav>
         <nav id="fomenu">
             <h2 class="rejtett">Főmenü</h2>
@@ -32,7 +34,6 @@
     </div>
 
     <div id="felirat">
-        <p><cite lang="en">Death Stranding</cite> – A jövő a kezedben van!</p>
         <p>Ez a honlap röviden összefoglalja a <cite lang="en">Death Stranding</cite> játékról fontos tudnivalókat.
             Böngéssz
             kedvedre!</p>
@@ -40,7 +41,7 @@
 </header>
 <main id="tartalom">
     <h1><cite lang="en">Death Stranding</cite> összefoglaló</h1>
-    <aside id="adatlap">
+    <aside id="adatlap" class="oszlopos">
         <h2>A játék adatai</h2>
         <p><b><abbr lang="en" title="PlayStation 4">PS4</abbr> MEGJELENÉS:</b>
             <time datetime="2019-11-08">2019. nov. 08.</time>
@@ -52,7 +53,7 @@
         <p><b>KIADÓ:</b> <span lang="en">505 Games</span></p>
         <p><b>AJÁNLOTT ÉLETKOR:</b> <strong>PEGI 18+</strong></p>
     </aside>
-    <article id="osszefoglalo">
+    <article id="osszefoglalo" class="oszlopos">
         <h2>Összefoglaló</h2>
         <p>
             Hideo Kojima és csapata, a <span lang="en">Kojima Productions</span> a <cite lang="en">Metal
@@ -124,39 +125,43 @@
      
     <div id="media">
         <h2>NÉZZ BELE A <cite lang="en">DEATH STRANDING</cite>BE</h2>
-        <h3>Videó és screenshotok</h3>
-        <video controls poster="media/death-stranding--9-game.jfif">
-            <source src="media/Death_Stranding_Trailer.mp4" type="video/mp4">
-            <p>A böngészője nem támogatja a videóállomány beágyazott lejátszását.</p>
-            <p><a href="media/Death_Stranding_Trailer.mp4">Az pelda állományt letöltheti mp4
-                formátumban.</a></p>
-        </video>
-        <figure>
-            <img src="media/death-stranding-4-game.jpg"
-                 alt="Kórházi jelenet a Death Stranding játékból">
-            <figcaption>Kórházi jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
-        </figure>
-        <figure>
-            <img src="media/death-stranding-5_game.jpg" alt="Harci jelenet a Death Stranding játékból">
-            <figcaption>Harci jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
-        </figure>
-        <figure>
-            <img src="media/death-stranding-6_game.jpg"
-                 alt="Üldözési jelenet a Death Stranding játékból">
-            <figcaption>Üldözési jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
-        </figure>
-        <figure>
-            <img src="media/death-standing-7-game.jfif" alt="Tájkép a Death Stranding játékból">
-            <figcaption>Tájkép a <cite lang="en">Death Stranding</cite> játékból</figcaption>
-        </figure>
-        <figure>
-            <img src="media/death-stranding--8-game.jfif" alt="Jelenet a Death Stranding játékból">
-            <figcaption>Jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
-        </figure>
-        <figure>
-            <img src="media/death-stranding--9-game.jfif" alt="Jelenet a Death Stranding játékból">
-            <figcaption>Jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
-        </figure>
+        <h3>Videó és <span lang="en"> screenshotok</span></h3>
+        <div class="slide">
+
+            <video controls poster="media/death-stranding--9-game.jfif">
+                <source src="media/Death_Stranding_Trailer.mp4" type="video/mp4">
+                <p>A böngészője nem támogatja a videóállomány beágyazott lejátszását.</p>
+                <p><a href="media/Death_Stranding_Trailer.mp4">Az pelda állományt letöltheti mp4
+                    formátumban.</a></p>
+            </video>
+            
+            <figure>
+                <img src="media/death-stranding-4-game.jpg"
+                     alt="Kórházi jelenet a Death Stranding játékból">
+                <figcaption>Kórházi jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
+            </figure>
+            <figure>
+                <img src="media/death-stranding-5_game.jpg" alt="Harci jelenet a Death Stranding játékból">
+                <figcaption>Harci jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
+            </figure>
+            <figure>
+                <img src="media/death-stranding-6_game.jpg"
+                     alt="Üldözési jelenet a Death Stranding játékból">
+                <figcaption>Üldözési jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
+            </figure>
+            <figure>
+                <img src="media/death-standing-7-game.jfif" alt="Tájkép a Death Stranding játékból">
+                <figcaption>Tájkép a <cite lang="en">Death Stranding</cite> játékból</figcaption>
+            </figure>
+            <figure>
+                <img src="media/death-stranding--8-game.jfif" alt="Jelenet a Death Stranding játékból">
+                <figcaption>Jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
+            </figure>
+            <figure>
+                <img src="media/death-stranding--9-game.jfif" alt="Jelenet a Death Stranding játékból">
+                <figcaption>Jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
+            </figure>
+        </div>
         <nav id="fomenureugras2">
             <h2 class="rejtett">Ugrás a főmenüre</h2>
             <a href="#fomenu">Ugrás a főmenüre</a>
