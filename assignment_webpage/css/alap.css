@@ -327,7 +327,12 @@ footer address, #keszito #address
         padding: 0;
     }
 }
-
+@media screen and (max-width: 500px) {
+ #kicsi
+ {
+     display: none;
+ }
+}
 /*---galery----*/
 /* Slideshow container */
 .slideshow-container {
