@@ -328,7 +328,7 @@ footer address, #keszito #address
     }
 }
 @media screen and (max-width: 500px) {
- #kicsi
+ .kicsi
  {
      display: none;
  }
@@ -347,13 +347,14 @@ footer address, #keszito #address
     width: 15px;
     margin: 0 2px;
     background-color: #bbb;
-    border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
     background-color: #265a88;
+    height: 20px;
+    width: 20px;
 }
 
 /* Fading animation */
