@@ -15,7 +15,16 @@ a#normalbetu, .nav a#normalbetu {
 header, #header {
     height: 700px;
 }
+.oszlopos, div .oszlopos
+{
 
+    column-width: 800px;
+    -webkit-column-width: 800px;
+    -moz-column-width: 800px;
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+}
 main, footer, #tartalom, #keszito {
     width: 90%;
     max-width: 2500px;
@@ -62,7 +71,7 @@ header nav ul, #header nav ul {
         min-width: 50px;
     }
 
-    #kicsi {
+    .kicsi {
         display: none;
     }
 }
