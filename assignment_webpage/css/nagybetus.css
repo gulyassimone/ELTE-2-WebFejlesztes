@@ -1,110 +1,91 @@
 @import url('alap.css');
 
 body {
-    font-size:2em;
+    font-size: 2em;
 }
-a#nagybetu, .nav a#nagybetu
-{
+
+a#nagybetu, .nav a#nagybetu {
     display: none;
 }
-a#normalbetu, .nav a#normalbetu
-{
+
+a#normalbetu, .nav a#normalbetu {
     display: block;
 }
-header,#header
-{
+
+header, #header {
     height: 700px;
 }
-main, footer, #tartalom, #keszito
-{
+
+main, footer, #tartalom, #keszito {
     width: 90%;
     max-width: 2500px;
 }
-figure, .figure
-{
-    display: inline-block;
-}
-figure img, .figure img {
-    vertical-align: top;
-}
-figcaption , .figcaption{
-    background: black;
-    color: #FFF;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-header nav ul,#header nav ul
-{
+
+header nav ul, #header nav ul {
     padding: 0;
 }
-@media screen and (max-width: 1200px)
-{
 
-    header div#felirat,#header div#felirat
-    {
+@media screen and (max-width: 1200px) {
+
+    header div#felirat, #header div#felirat {
         width: 80%;
     }
-
-    header nav#gyengenlato,#header .nav#gyengenlato
-    {
-        width: 200px;
-    }
 }
-@media screen and (max-width: 1500px)
-{
-    header div#felirat,#header div#felirat
-    {
+
+@media screen and (max-width: 1500px) {
+    header div#felirat, #header div#felirat {
         top: 450px;
     }
-    header a , #header a{
+
+    header a, #header a {
         float: none;
         display: block;
         text-align: left;
     }
-    header, #header
-    {
-        background-position:40% calc(100% + 200px) ;
+
+    header, #header {
+        background-position: 40% calc(100% + 200px);
     }
 }
-@media screen and (max-width: 700px)
-{
-    header div#felirat, #header div#felirat
-    {
+
+@media screen and (max-width: 800px) {
+    header div#felirat, #header div#felirat {
         top: 400px;
     }
 
-    header, #header
-    {
-        background-position:20% calc(100% + 200px) ;
+    header, #header {
+        background-position: 20% calc(100% + 200px);
     }
 
-    span#kicsi
-    {
-        display: none;
-    }
-    a#normalbetu {
-        margin: 0;
+    header nav#gyengenlato, #header .nav#gyengenlato {
+        width: 10%;
         min-width: 50px;
-        float: right;
+    }
+
+    #kicsi {
+        display: none;
     }
 }
 
 @media screen and (max-width: 400px) {
-    header, #header
-    {
-        background-position:40% calc(100% + 200px) ;
+    header, #header {
+        background-position: 40% calc(100% + 200px);
     }
-    header div#felirat, #header div#felirat
-    {
+
+    header div#felirat, #header div#felirat {
         background: rgba(255, 255, 255, 0.6);
         padding: 0;
         margin: 0;
         left: 5px;
-        position: absolute;
+        position: relative;
         top: 400px;
         width: 100%;
         z-index: 1;
     }
+}
+@media print {
+    #media {page-break-before: always}
+    #forras {page-break-before: always}
+    #osszegzes {page-break-before: always}
+    #hozzaszolas #keszito {page-break-before: always}
 }

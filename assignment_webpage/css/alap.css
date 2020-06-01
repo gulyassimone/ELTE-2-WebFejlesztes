@@ -15,7 +15,7 @@ header,#header
     left: 40px;
     background-position: 40% 10%;
 }
-header div#felirat, #header div#felirat
+header div#felirat
 {
     background: rgba(255, 255, 255, 0.6);
     width: 400px;
@@ -69,11 +69,10 @@ header nav a, #header .nav a
     font-size: 1.5em;
     margin-right: 1em;
 }
-nav#gyengenlato, .nav#gyengenlato  {
-    position:absolute;
-    top: 20px;
-    right: 28px;
-
+nav#gyengenlato, #header .nav#gyengenlato  {
+    position:relative;
+    vertical-align:middle;
+    float: right;
 }
 nav#gyengenlato strong,.nav#gyengenlato strong
 {
@@ -115,7 +114,7 @@ a
 {
     transition: all .5s;
 }
-a:not(nav,.nav) {
+#tartalom a, #keszito a{
     color: #0000e0;
 }
 
@@ -175,9 +174,9 @@ figure img , .figure img {
     display: block;
 }
 figcaption, .figcaption {
-    background: rgba(0, 0, 0, 0.5);
+    background: black;
     color: #FFF;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -186,6 +185,14 @@ figcaption, .figcaption {
 {
     width: 100%;
     height: auto;
+}
+.underline
+{
+    text-decoration: underline;
+}
+.center
+{
+    text-align: center;
 }
 video {
     display: block;
@@ -292,14 +299,14 @@ footer address, #keszito #address
 }
 
 @media screen and (max-width: 900px) {
-    header a, #header a{
+    header nav#fomenu a, #header .nav#fomenu a{
         float: none;
         display: block;
         text-align: left;
     }
-    header nav#gyengenlato, #header .nav#gyengenlato
+    #gyengenlato
     {
-        width: 100px;
+        display: block;
     }
     header div#felirat, #header div#felirat
     {
@@ -363,4 +370,33 @@ footer address, #keszito #address
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+@media print {
+    body{
+        font-family: "Times New Roman",Serif;
+        margin: 3cm;
+        max-width: unset;
+        margin: 0 auto;
+    }
+    video
+    {
+        display: none;
+    }
+    header,#header
+    {
+        display:none;
+    }
+    main, footer, #tartalom, #keszito
+    {
+        width: 100%;
+        padding: 0;
+        max-width: unset;
+    }
+    .section {page-break-after: always}
+    h1 {page-break-before: always}
+    nav, .nav {display: none}
+    a:after{content: "(" attr(href) ")";}
+    article, .article {page-break-before: auto}
+
 }
