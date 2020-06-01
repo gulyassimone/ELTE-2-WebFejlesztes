@@ -26,7 +26,14 @@ header div#felirat, #header div#felirat
     left: 30px;
     z-index: 1;
 }
-#index .index,#szereplo .szereplok, #fogadtatas .kritika, #hozzaszolas .velemeny{
+
+#index nav .index,#szereplo nav .szereplok, #fogadtatas nav .kritika, #hozzaszolas nav .velemeny{
+    font-size: 2em;
+    color: #265a88;
+    border-left: 1px dotted black;
+    padding: 0 10px;
+}
+#index .nav .index,#szereplo .nav .szereplok, #fogadtatas .nav .kritika, #hozzaszolas .nav .velemeny{
     font-size: 2em;
     color: #265a88;
     border-left: 1px dotted black;
