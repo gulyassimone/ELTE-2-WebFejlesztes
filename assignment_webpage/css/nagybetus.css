@@ -3,79 +3,79 @@
 body {
     font-size:2em;
 }
-a#nagybetu
+a#nagybetu, .nav a#nagybetu
 {
     display: none;
 }
-a#normalbetu
+a#normalbetu, .nav a#normalbetu
 {
     display: block;
 }
-header
+header,#header
 {
     height: 700px;
 }
-main, footer
+main, footer, #tartalom, #keszito
 {
     width: 90%;
     max-width: 2500px;
 }
-figure
+figure, .figure
 {
     display: inline-block;
 }
-figure img {
+figure img, .figure img {
     vertical-align: top;
 }
-figcaption {
-    background: rgba(0, 0, 0);
+figcaption , .figcaption{
+    background: black;
     color: #FFF;
     position: relative;
     bottom: 0;
     left: 0;
     right: 0;
 }
-header nav ul
+header nav ul,#header nav ul
 {
     padding: 0;
 }
 @media screen and (max-width: 1200px)
 {
 
-    header div#felirat
+    header div#felirat,#header div#felirat
     {
         width: 80%;
     }
 
-    header nav#gyengenlato
+    header nav#gyengenlato,#header .nav#gyengenlato
     {
         width: 200px;
     }
 }
 @media screen and (max-width: 1500px)
 {
-    header div#felirat
+    header div#felirat,#header div#felirat
     {
         top: 450px;
     }
-    header a {
+    header a , #header a{
         float: none;
         display: block;
         text-align: left;
     }
-    header
+    header, #header
     {
         background-position:40% calc(100% + 200px) ;
     }
 }
 @media screen and (max-width: 700px)
 {
-    header div#felirat
+    header div#felirat, #header div#felirat
     {
         top: 400px;
     }
 
-    header
+    header, #header
     {
         background-position:20% calc(100% + 200px) ;
     }
@@ -92,11 +92,11 @@ header nav ul
 }
 
 @media screen and (max-width: 400px) {
-    header
+    header, #header
     {
         background-position:40% calc(100% + 200px) ;
     }
-    header div#felirat
+    header div#felirat, #header div#felirat
     {
         background: rgba(255, 255, 255, 0.6);
         padding: 0;
