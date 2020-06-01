@@ -137,6 +137,21 @@ a:hover
     color: #265a88;
     text-decoration: underline;
 }
+#header a:hover
+{
+    color: #265a88;
+    text-decoration: underline;
+}
+#tartalom a:hover
+{
+    color: #265a88;
+    text-decoration: underline;
+}
+#keszito a:hover
+{
+    color: #265a88;
+    text-decoration: underline;
+}
 .rejtett {position:absolute; left:-9999px;}
 
 h1,h2,h3
