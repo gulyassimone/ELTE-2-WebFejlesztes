@@ -6,28 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/alap.css" title="normal">
     <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
+    <script src="scripts/styleswitcher.js"></script>
 </head>
 
-<body>
+<body id="hozzaszolas">
 <nav id="tartalomraugras">
     <h2 class="rejtett">Ugrás az oldalon belül</h2>
     <a class="rejtett" href="#tartalom">Ugrás a tartalomra</a>
 </nav>
 <header>
     <div class="fejlec">
-        <nav id="gyengenlato"><a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;"><strong>A+</strong> Nagybetűs
+        <nav id="gyengenlato"><a id="nagybetu" href="#"
+                                 onclick="setActiveStyleSheet('nagybetus'); return false;"><strong>A+</strong> Nagybetűs
             változat</a>
-            <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><strong>A-</strong> Normál változat</a>
+            <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><strong>A-</strong><span
+                    id="kicsi">
+                Normál változat</span></a>
         </nav>
         <nav id="fomenu">
             <h2 class="rejtett">Főmenü</h2>
             <ul>
-                <li><a href="index.html" title="Összefoglaló">Főoldal</a></li>
-                <li><a href="szereplok.html" title="A játék szereplői">Szereplők</a></li>
-                <li><a href="kritika.html"
+                <li><a class="index" href="index.html" title="Összefoglaló">Főoldal</a></li>
+                <li><a class="szereplok" href="szereplok.html" title="A játék szereplői">Szereplők</a></li>
+                <li><a class="kritika" href="kritika.html"
                        title="A játék kritikája és dijainak összefoglalója">Kritika</a>
                 </li>
-                <li><a href="velemenyed.html" title="Itt megírhatod a véleményed">Véleményed</a></li>
+                <li><a class="velemeny" href="velemenyed.html" title="Itt megírhatod a véleményed">Véleményed</a></li>
             </ul>
         </nav>
     </div>
@@ -41,14 +45,14 @@
         <form action="mailto:h2e9aq@inf.elte.hu" method="post" enctype="text/plain">
             <fieldset>
                 <legend>Adataid</legend>
-                <p><label>Név: <input type="text" name="nev" id="nev" required> </label></p>
+                <p><label>Név: <input type="text" name="nev" id="nev" size="60" maxlength="60"> </label></p>
                 <p>Nem:
                     <input type="radio" name="nem" id="nem1" value="Férfi"><label for="nem1">Férfi</label>
                     <input type="radio" name="nem" id="nem2" value="Nő"><label for="nem2">Nő</label>
                 </p>
-                <p><label><strong>Email cím:</strong> <input type="email" name="email" id="email" required></label>
+                <p><label><strong>Email</strong>: <input type="email" name="email" id="email" size="60" maxlength="60" required></label>
                 </p>
-                <p><input type="checkbox" name="nyilvanos" id="nyilvanos" value="igen" checked> <label
+                <p><input type="checkbox" name="nyilvanos" id="nyilvanos" value="igen"> <label
                         for="nyilvanos">Hozzájárulok
                     véleményem nyilvánossá tételéhez.</label></p>
             </fieldset>
@@ -56,7 +60,7 @@
                 <legend>Véleményed</legend>
                 <p>
                     <label>Véleményed:<br>
-                        <textarea cols="60" rows="10" name="velemenyed" id="velemenyed"></textarea><br>
+                        <textarea cols="60" rows="10" name="velemenyed" id="velemenyed" maxlength="900"></textarea><br>
                     </label>
                 </p>
                 <p>Értékelés 1-től 5-ös skálán:<br>
@@ -68,10 +72,10 @@
                 <p>
                     <label>Melyik volt a kedvenc szereplőd, és miért?:<br>
                         <textarea cols="60" rows="10" name="kedvencszereplo"
-                                  id="kedvencszereplo"></textarea></label>
+                                  id="kedvencszereplo" maxlength="900"></textarea></label>
                 </p>
                 <p>
-                    Ajánlanád-e másoknak?:
+                    Ajánlanád-e másoknak?:<br>
                     <input type="radio" name="ajanlas" id="a1" value="Igen"><label for="a1">Igen</label>
                     <input type="radio" name="ajanlas" id="a2" value="Nem"><label for="a2">Nem</label>
                 </p>

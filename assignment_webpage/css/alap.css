@@ -1,15 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap';
 
 html
 {
-    font-family: "Open Sans",sans-serif;
-   /* background-image: url("../media/death-standing-background.jpg");*/
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif;;
 }
 /*-------------header-----------*/
-header
+header,#header
 {
     background-image: url("../media/death-stranding-cover1.jpg");
     background-repeat: no-repeat;
@@ -17,18 +13,24 @@ header
     min-height: 600px;
     top: 40px;
     left: 40px;
-    background-position: 40% 40%;
+    background-position: 40% 10%;
 }
-header div#felirat
+header div#felirat, #header div#felirat
 {
     background: rgba(255, 255, 255, 0.6);
     width: 400px;
     margin: 10px;
-    padding: 0px 10px 0px 10px;
+    padding: 0 10px 0 10px;
     position: absolute;
     top: 400px;
     left: 30px;
     z-index: 1;
+}
+#index .index,#szereplo .szereplok,#fogadtatas .kritika,#hozzaszolas .velemeny{
+    font-size: 2em;
+    color: #265a88;
+    border-left: 1px dotted black;
+    padding: 0 10px;
 }
 .fejlec
 {
@@ -42,15 +44,15 @@ h2 {
  }
 strong
 {
-    color: red;
+    color: #5c0819;
     font-weight: bold;
 }
-header nav ul li
-{
+header nav ul li , #header .nav ul li{
     display: inline;
     white-space: nowrap;
 }
-header nav a
+
+header nav a, #header .nav a
 {
     color: black;
     text-decoration: none;
@@ -59,25 +61,25 @@ header nav a
     font-size: 1.5em;
     margin-right: 1em;
 }
-nav#gyengenlato {
+nav#gyengenlato, .nav#gyengenlato  {
     position:absolute;
     top: 20px;
     right: 28px;
 
 }
-nav#gyengenlato strong
+nav#gyengenlato strong,.nav#gyengenlato strong
 {
-    font-size:30px
+    font-size:120%;
 }
 a#normalbetu {display: none}
 /*------------main------------*/
-main nav
+main nav, #tartalom .nav
 {
 
     text-align: right;
     margin-bottom: 20px;
 }
-main aside nav
+main aside nav, #tartalom #aside .nav
 {
     text-align: left;
     font-variant: small-caps;
@@ -86,7 +88,7 @@ main aside nav
     margin: 0 10px 10px 20px;
     font-size: 24px;
 }
-main aside nav a
+main aside nav a, #tartalom #aside .nav a
 {
     color: black;
     text-decoration: none;
@@ -97,13 +99,29 @@ a[href="#fomenu"]
     text-decoration: none;
     transition: all .5s;
 }
+.modositott
+{
+    color: #265a88;
+}
 a
 {
     transition: all .5s;
 }
+a:not(nav) {
+    color: #0000e0;
+}
+
+/* visited link */
+article#forras a:visited, .article#forras a:visited  {
+    color: #34515e;
+}
+/* visited link */
+footer a:visited, #footer a:visited {
+    color: #34515e;
+}
 a:hover
 {
-    color: #2e6da4;
+    color: #265a88;
     text-decoration: underline;
 }
 .rejtett {position:absolute; left:-9999px;}
@@ -112,11 +130,15 @@ h1,h2,h3
 {
     text-shadow: 3px 3px 3px #ccc;
 }
+h3
+{
+    text-align: center;
+}
 p
 {
-    text-align: justify;
+    text-align: left;
 }
-section
+section, .section
 {
     border-top: 1px solid #ccc;
     padding: 20px;
@@ -132,13 +154,13 @@ section
     -webkit-column-count: 2;
     -moz-column-count: 2;
 }
-figure {
+figure , .figure{
     position: relative;
 }
-figure img {
+figure img , .figure img {
     display: block;
 }
-figcaption {
+figcaption, .figcaption {
     background: rgba(0, 0, 0, 0.5);
     color: #FFF;
     position: absolute;
@@ -150,6 +172,11 @@ figcaption {
 {
     width: 100%;
     height: auto;
+}
+video {
+    display: block;
+    margin: auto;
+    width:100%;
 }
 main,footer
 {
@@ -170,6 +197,7 @@ article#forras
 }
 article#dijak table
 {
+    width: auto;
     margin: 0 auto;
     border-collapse: collapse;
 }
@@ -184,11 +212,71 @@ article#dijak table td
     padding: 5px;
 }
 caption{caption-side: bottom}
+
+legend
+{
+    font-size: 120%;
+    font-weight: bold;
+    color: #265a88;
+}
+fieldset
+{
+    border: none;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text],input[type=email], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+}
+
+input[type=submit] {
+    width: 10%;
+    min-width: 100px;
+    background-color: #265a88;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #34515e;
+}
+input[type=reset] {
+    width: 10%;
+    min-width: 100px;
+    background-color: #aa0000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: #5c0819;
+}
+
+/* Slideshow container */
+
 /*------------footer------------*/
 footer address
 {
     text-align: center;
 }
+
 @media screen and (max-width: 900px) {
     header a {
         float: none;
@@ -210,6 +298,55 @@ footer address
     }
     figure
     {
-        font-size: 12px;
+        font-size: 80%;
     }
+
+    header nav ul
+    {
+        padding: 0;
+    }
+}
+
+/*---galery----*/
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #265a88;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slideshow-container img
+{
+    width: 100%;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }

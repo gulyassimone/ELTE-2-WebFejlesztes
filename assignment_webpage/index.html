@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/alap.css" title="normal">
     <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
+    <script src="scripts/styleswitcher.js"></script>
 </head>
-<body>
+<body id="index">
 <nav id="tartalomraugras">
     <h2 class="rejtett">Ugrás az oldalon belül</h2>
     <a class="rejtett" href="#tartalom">Ugrás a tartalomra</a>
@@ -17,18 +18,19 @@
         <nav id="gyengenlato"><a id="nagybetu" href="#"
                                  onclick="setActiveStyleSheet('nagybetus'); return false;"><strong>A+</strong> Nagybetűs
             változat</a>
-            <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><strong>A-</strong>
-                Normál változat</a>
+            <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><strong>A-</strong><span
+                    id="kicsi">
+                Normál változat</span></a>
         </nav>
         <nav id="fomenu">
             <h2 class="rejtett">Főmenü</h2>
             <ul>
-                <li><a href="index.html" title="Összefoglaló">Főoldal</a></li>
-                <li><a href="szereplok.html" title="A játék szereplői">Szereplők</a></li>
-                <li><a href="kritika.html"
+                <li><a class="index" href="index.html" title="Összefoglaló">Főoldal</a></li>
+                <li><a class="szereplok" href="szereplok.html" title="A játék szereplői">Szereplők</a></li>
+                <li><a class="kritika" href="kritika.html"
                        title="A játék kritikája és dijainak összefoglalója">Kritika</a>
                 </li>
-                <li><a href="velemenyed.html" title="Itt megírhatod a véleményed">Véleményed</a></li>
+                <li><a class="velemeny" href="velemenyed.html" title="Itt megírhatod a véleményed">Véleményed</a></li>
             </ul>
         </nav>
     </div>
@@ -38,6 +40,7 @@
             Böngéssz
             kedvedre!</p>
     </div>
+
 </header>
 <main id="tartalom">
     <h1><cite lang="en">Death Stranding</cite> összefoglaló</h1>
@@ -80,7 +83,7 @@
             világban az
             folytathatja a kalandot, ám minden pusztítás, amit halálakor a világ átélt, megmarad.
             Szintén
-            eső nem pusztán vízből áll! A <span lang="en">"Timefall"</span>, akit vagy amit elér,
+            eső nem pusztán vízből áll! A <span lang="en">Timefall</span>, akit vagy amit elér,
             azonnal
             öregíti, így az emberek meghalnak, az épületek összedőlnek, a világ pedig tovább pusztul.
         </p>
@@ -125,58 +128,62 @@
      
     <div id="media">
         <h2>NÉZZ BELE A <cite lang="en">DEATH STRANDING</cite>BE</h2>
-        <h3>Videó és <span lang="en"> screenshotok</span></h3>
-        <div class="slide">
-
-            <video controls poster="media/death-stranding--9-game.jfif">
-                <source src="media/Death_Stranding_Trailer.mp4" type="video/mp4">
-                <p>A böngészője nem támogatja a videóállomány beágyazott lejátszását.</p>
-                <p><a href="media/Death_Stranding_Trailer.mp4">Az pelda állományt letöltheti mp4
-                    formátumban.</a></p>
-            </video>
-            
-            <figure>
-                <img src="media/death-stranding-4-game.jpg"
-                     alt="Kórházi jelenet a Death Stranding játékból">
-                <figcaption>Kórházi jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
-            </figure>
-            <figure>
-                <img src="media/death-stranding-5_game.jpg" alt="Harci jelenet a Death Stranding játékból">
-                <figcaption>Harci jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
-            </figure>
-            <figure>
-                <img src="media/death-stranding-6_game.jpg"
-                     alt="Üldözési jelenet a Death Stranding játékból">
-                <figcaption>Üldözési jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
-            </figure>
-            <figure>
-                <img src="media/death-standing-7-game.jfif" alt="Tájkép a Death Stranding játékból">
-                <figcaption>Tájkép a <cite lang="en">Death Stranding</cite> játékból</figcaption>
-            </figure>
-            <figure>
-                <img src="media/death-stranding--8-game.jfif" alt="Jelenet a Death Stranding játékból">
-                <figcaption>Jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
-            </figure>
-            <figure>
-                <img src="media/death-stranding--9-game.jfif" alt="Jelenet a Death Stranding játékból">
-                <figcaption>Jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
-            </figure>
+        <h3><span class="modositott">Videó</span> és <span lang="en"> screenshotok</span></h3>
+        <video controls poster="media/death-standing--background.jfif">
+            <source src="media/Death_Stranding_Trailer.mp4" type="video/mp4">
+            <p>A böngészője nem támogatja a videóállomány beágyazott lejátszását.</p>
+            <p><a href="media/Death_Stranding_Trailer.mp4">Az pelda állományt letöltheti mp4
+                formátumban.</a></p>
+        </video>
+        <div class="slideshow-container">
+            <a target="_blank" href="media/death-stranding--9-game.jfif">
+                <div class="mySlides fade">
+                    <figure>
+                        <img src="media/death-stranding--9-game.jfif"
+                             alt="Jelenet a Death Stranding játékból">
+                        <figcaption>Jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
+                    </figure>
+                </div>
+            </a>
+            <div class="mySlides fade">
+                <a target="_blank" href="media/death-stranding-6_game.jpg">
+                    <figure>
+                        <img src="media/death-stranding-6_game.jpg"
+                             alt="Üldözési jelenet a Death Stranding játékból">
+                        <figcaption>Üldözési jelenet a <cite lang="en">Death Stranding</cite> játékból</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="mySlides fade">
+                <a target="_blank" href="media/death-standing-7-game.jfif">
+                    <figure>
+                        <img src="media/death-standing-7-game.jfif" alt="Tájkép a Death Stranding játékból">
+                        <figcaption>Tájkép a <cite lang="en">Death Stranding</cite> játékból</figcaption>
+                    </figure>
+                </a>
+            </div>
         </div>
-        <nav id="fomenureugras2">
-            <h2 class="rejtett">Ugrás a főmenüre</h2>
-            <a href="#fomenu">Ugrás a főmenüre</a>
-        </nav>
-        <article id="forras">
-            <h2>Források:</h2>
-            <p><a target="_blank" href="https://www.konzolvilag.hu/death-stranding#ismerteto">konzolvilag
-                :<cite lang="en">Death Stranding</cite> ismertető</a></p>
-            <p><a target="_blank" href="https://store.steampowered.com/app/1190460/Death_Stranding">steam:
-                Death_Stranding</a></p>
-            <p><a target="_blank" href="https://www.playstation.com/hu-hu/games/death-stranding-ps4/">playstation: <cite
-                    lang="en">Death Stranding</cite></a></p>
-
-        </article>
+        <script src="scripts/sideshow.js"></script>
     </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <nav id="fomenureugras2">
+        <h2 class="rejtett">Ugrás a főmenüre</h2>
+        <a href="#fomenu">Ugrás a főmenüre</a>
+    </nav>
+    <article id="forras">
+        <h2>Források:</h2>
+        <p><a target="_blank" href="https://www.konzolvilag.hu/death-stranding#ismerteto">konzolvilag
+            :<cite lang="en">Death Stranding</cite> ismertető</a></p>
+        <p><a target="_blank" href="https://store.steampowered.com/app/1190460/Death_Stranding">steam:
+            Death_Stranding</a></p>
+        <p><a target="_blank" href="https://www.playstation.com/hu-hu/games/death-stranding-ps4/">playstation: <cite
+                lang="en">Death Stranding</cite></a></p>
+    </article>
 </main>
 <footer id="keszito">
     <address>
@@ -186,4 +193,6 @@
     </address>
 </footer>
 </body>
+
+
 </html>

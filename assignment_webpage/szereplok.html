@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/alap.css" title="normal">
     <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
+    <script src="scripts/styleswitcher.js"></script>
 </head>
 
-<body>
+<body id="szereplo">
 <nav id="tartalomraugras">
     <h2 class="rejtett">Ugrás az oldalon belül</h2>
     <a class="rejtett" href="#tartalom">Ugrás a tartalomra</a>
@@ -18,25 +19,26 @@
         <nav id="gyengenlato"><a id="nagybetu" href="#"
                                  onclick="setActiveStyleSheet('nagybetus'); return false;"><strong>A+</strong> Nagybetűs
             változat</a>
-            <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><strong>A-</strong>
-                Normál változat</a>
+            <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><strong>A-</strong><span
+                    id="kicsi">
+                Normál változat</span></a>
         </nav>
         <nav id="fomenu">
             <h2 class="rejtett">Főmenü</h2>
             <ul>
-                <li><a href="index.html" title="Összefoglaló">Főoldal</a></li>
-                <li><a href="szereplok.html" title="A játék szereplői">Szereplők</a></li>
-                <li><a href="kritika.html"
+                <li><a class="index" href="index.html" title="Összefoglaló">Főoldal</a></li>
+                <li><a class="szereplok" href="szereplok.html" title="A játék szereplői">Szereplők</a></li>
+                <li><a class="kritika" href="kritika.html"
                        title="A játék kritikája és dijainak összefoglalója">Kritika</a>
                 </li>
-                <li><a href="velemenyed.html" title="Itt megírhatod a véleményed">Véleményed</a></li>
+                <li><a class="velemeny" href="velemenyed.html" title="Itt megírhatod a véleményed">Véleményed</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
 <main id="tartalom">
-    <h1>Szereplők:</h1>
+    <h1>Főszereplők:</h1>
     <aside>
         <nav id="oldalmenu">
             <h2 class="rejtett">Oldalmenü</h2>
@@ -53,6 +55,7 @@
         </nav>
     </aside>
     <article id="szereplok">
+        <h2>Szereplők:</h2>
         <section id="sam" class="oszlopos">
             <h2><span style="text-decoration: underline">S</span>AM PORTER BRIDGES</h2>
             <figure>
@@ -63,7 +66,7 @@
                 <figcaption>SAM PORTER BRIDGES szereplő</figcaption>
             </figure>
             <p>
-                Sam Porter Bridges , <q>A Legenda</q>, <q>A nagy szállító</q> – a <cite lang="en">Death
+                Sam Porter Bridges , <i><q>A Legenda</q></i>, <i><q>A nagy szállító</q></i> – a <cite lang="en">Death
                 Stranding</cite> általad irányított főszereplőjét számos néven ismerik Amerikában, hiszen
                 volt
                 ideje
@@ -158,7 +161,7 @@
                      class="responsive">
                 <figcaption>A Veteran szereplő</figcaption>
             </figure>
-            <p>A <q>veterán</q>, a <q>titokzatos ember</q>, a <q>titokzatos katona</q>: több
+            <p>A <i><q>veterán</q></i>, a <i><q>titokzatos ember</q></i>, a <i><q>titokzatos katona</q></i>: több
                 néven is lehet illetni
                 azt
                 a karaktert, aki a
@@ -175,7 +178,7 @@
                 Refn révén került kapcsolatba Kodzsimával . Ő rendezte ugyanis a
                 <time datetime="2011">2011</time>
                 -es kultfilmet, Kodzsima egyik kedvencét, a <cite lang="en">Drive</cite>-ot
-                (<cite lang="en">Drive</cite> – <cite>Gázt!</cite>), és az ő filmje, a <cite lang="en">Pusher</cite>
+                (<cite><span lang="en"> Drive</span>– Gázt!</cite>), és az ő filmje, a <cite lang="en">Pusher</cite>
                 (<cite>Veszélyes ultimátum</cite>) volt az, amiben Mads Mikkelsen lett a főszereplő (sőt, ez volt
                 az első kiemelt szerepe az iparban!). Refn maga ajánlotta be Mikkelsent Kodzsimának ,
                 kiemelve, hogy ez bizony mindenkit meglepne. Kodzsimát nemhogy nem zavarta az ötlet, de mindez
@@ -204,7 +207,7 @@
                 <figcaption>HIGGS MONAGHAN szereplő</figcaption>
             </figure>
             <p>
-                A <cite lang="en">Death Stranding</cite> „főgonosza” és antagonistája, az aranymaszkot viselő Higgs
+                A <cite lang="en">Death Stranding</cite> „főgonosza” és antagonistája, az arany maszkot viselő Higgs
                 már az első percekben komoly bajt zúdít Sam nyakába, de ez később csak fokozódik, sőt: igazából
                 Higgs az, akinek mindenkihez köze van valamilyen úton-módon, és ez általában sosem valami vidám
                 történetet jelent. Nem véletlen, hogy Sam útját nemcsak társai, de ezen ellensége is végigkíséri,
