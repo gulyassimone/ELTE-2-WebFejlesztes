@@ -187,6 +187,7 @@ figure , .figure{
 }
 figure img , .figure img {
     display: block;
+    width: 100%;
 }
 figcaption, .figcaption {
     background: black;
@@ -348,51 +349,6 @@ footer address, #keszito #address
      display: none;
  }
 }
-/*---galery----*/
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #265a88;
-    height: 20px;
-    width: 20px;
-}
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-.slideshow-container img
-{
-    width: 100%;
-}
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
 @media print {
     body{
         font-family: "Times New Roman",Serif;

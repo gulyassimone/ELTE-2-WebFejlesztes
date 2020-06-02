@@ -69,6 +69,7 @@ header nav ul, #header nav ul {
     header nav#gyengenlato, #header .nav#gyengenlato {
         width: 10%;
         min-width: 50px;
+        margin-right: 5px;
     }
 
     .kicsi {
